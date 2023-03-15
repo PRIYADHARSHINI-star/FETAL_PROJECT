@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    font-family: 'verdana';
+}
+
+#form-container{
+    background-image: url('background.jpg');
+}
+form label {
+    color: white;
+    font-size: 13px;
+    font-family: "Verdana";
+}
+
+form div#name-container>div {
+    display: inline-block;
+    width: 47%;
+}
+
+form {
+    margin: 0px 20%;
+    background-color: #83c1e8;
+    padding: 100px 75px;
+}
+
+form input[type="text"],
+form textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 2px;
+}
+div#submit-container{
+    margin: 0px 30%;
+}
+form input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40%;
+} 
+
+form>div {
+    margin-bottom: 20px;
+}
+
+div#first-name-pane {
+    margin-right: 5%;
+}
+form input[type="email"]{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 2px;
+}

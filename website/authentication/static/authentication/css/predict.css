@@ -1,0 +1,123 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("Nav.jpg");
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#form-container{
+    background-image: url("Hos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form div#name-container>div {
+    display: inline-block;
+    width: 47%;
+}
+
+form {
+    margin: 0px 20%;
+    padding: 100px 75px;
+}
+
+form input{
+    width: 100%;
+    border: 3px solid #aaa;
+    border-radius:4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    font-size: medium;
+}
+form input[type=number]:focus{
+    border-color: navy;
+    box-shadow: 0 0 10px 0 dodgerblue;
+}
+form textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 2px;
+}
+#submit {
+    width: 250px;
+    height:50px;
+    border-radius:180px;
+    position:relative;
+    
+    top:calc(50% - 25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor:pointer;
+    line-height:12px;
+  }
+  #submit:after {
+    content:'Predict';
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(19, 20, 22);
+  }
+form input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40%;
+} 
+
+form>div {
+    margin-bottom: 20px;
+}
+
+div#first-name-pane {
+    margin-right: 5%;
+}
+form input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 2px;
+}
+form label{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 42px;
+    color: rgb(255, 255, 255);
+
+}
+#submit {
+    display: inline-block;
+    vertical-align: middle;
+  }
+form p {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: large;
+    font-family:Verdana,Tahoma, sans-serif;
+    color: rgb(251, 244, 252);
+    text-align: center;
+  }
+  .box {
+    display: inline-block;
+    background-color:dimgrey;
+    border: 2px solid rgb(254, 250, 255);
+    padding: 10px;
+    width: 61%;
+    border-radius: 5px;
+  }
