@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact us!!</title>
+    <meta name="description" content="">
+    <meta name=" viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'authentication/css/main1.css' %}">
+</head>
+
+<body>
+    <h1>GET IN TOUCH</h1>
+    <div id="form-container">
+        <form action="contacting" method='post'>
+            {% csrf_token %}
+            <div id="name-container">
+                <div id="first-name-pane">
+                    <label class='spec' for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div id="last-name-pane">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                </div>
+            </div>
+            <div id="phone-container">
+                <label for="phone_nu">Contact Number:</label><br>
+                <input type="text" pattern="[789][0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9" id="phone_nu" name="phone_nu" required><br>
+            </div>
+            <div id="mail-container">
+                <label for="mail_id">Email_id:</label><br>
+                <input type="email" id="mail_id" name="mail_id" required><br>
+            </div>
+            <div id="message-container">
+                <label for="message">Message:</label><br>
+                <textarea id="w3review" name="w3review" rows="4" cols="50" required></textarea><br><br>
+            </div>
+
+            <div id="submit-container">
+                <input type="submit" value="Submit">
+            </div>
+        
+        </form>
+
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
