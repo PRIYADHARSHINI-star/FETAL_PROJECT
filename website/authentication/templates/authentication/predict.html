@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact us!!</title>
+    <meta name="description" content="">
+    <meta name=" viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'authentication/css/predict.css' %}">
+</head>
+
+<body>
+    <h1>FETAL HEALTH PREDICTOR</h1>
+    <div id="form-container">
+        <form action="{% url 'results' %}">
+            {% csrf_token %}
+            <label for="Patient_ID">Enter Patient ID</label>
+            <input type="number" name="Patient_ID" pattern="{8}" required placeholder="Riya"><br>
+            <label for="Abs_var">Abnormal short term variablity</label>
+            <input type="number" name="Abs_var" required placeholder="15" min="0" max="90"><br>
+            <label for="Pec_abl">Percentage of time with abnormal long term variability</label><br>
+            <input type="number" name="Pec_abl" required placeholder="15" min="0" max="95"><br>
+            <label for="me_st">Mean value of short term variability</label><br>
+            <input type="number" name="me_st" required placeholder="15" min="0" max="10"><br>
+            <label for="His_mean">Histogram mean</label><br>
+            <input type="number" name="His_mean" required placeholder="15" min="60" max="190"><br>
+            <label for="Pro_dec">Prolongued decelerations</label><br>
+            <input type="number" name="Pro_dec" required placeholder="15" min="0" max="5"><br>
+            <label for="His_med">Histogram median</label><br>
+            <input type="number" name="His_med" required placeholder="15" min="70" max="190"><br>
+            <label for="Acc">Accelerations</label><br>
+            <input type="number" name="Acc" required placeholder="15" min="0" max="10"><br>
+            <label for="His_mod">Histogram mode</label><br>
+            <input type="number" name="His_mod" required placeholder="15" min="55" max="190"><br>
+            <label for="Me_lt">Mean value of long term variability</label><br>
+            <input type="number" name="Me_lt" required placeholder="15" min="0" max="70"><br>
+            <label for="His_min">Histogram min</label><br>
+            <input type="number" name="His_min" required placeholder="15" min="40" max="160"><br><br>
+            
+            <button type="submit" id="submit"></button>
+            <p class="box"> Fetal Health is <b>{{result}}</b></p>
+        </form>
+    </div>
+    <script src="" async defer></script>
+</body>
+</html>
